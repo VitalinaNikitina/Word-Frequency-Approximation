@@ -47,23 +47,28 @@ Fields:
 
 Methods:
 --------
-* `__init__`(file_path: str)\
+* `__init__`(file_path: str)
+  
     Loads a text file, preprocesses it, computes word frequencies, and ranks them.
 
-* `preprocessing`(file_path: str) -> list\
+* `preprocessing`(file_path: str) -> list
+  
     Static method to load and clean text: detects encoding, removes block comments, 
     converts to lowercase, and extracts words.
 
-* `count_greater_or_equal`(frequencies: list) -> np.ndarray\
+* `count_greater_or_equal`(frequencies: list) -> np.ndarray
+  
     Static method to compute the number of words occurring at least a given number of times.
 
-* `r_nk_approx`(a: float, q: float, m: float, m_0: int = DEFAULT_M0, n_knots: int = DEFAULT_N_KNOTS) -> np.ndarray\
+* `r_nk_approx`(a: float, q: float, m: float, m_0: int = DEFAULT_M0, n_knots: int = DEFAULT_N_KNOTS) -> np.ndarray
+  
     Approximates r(n, k) (the number of words appearing at least k times) 
     using the Zipf-Mandelbrot law.
 
 * `powell_optimization`(a_start: float = DEFAULT_A_START, q_start: float = DEFAULT_Q_START, 
                     rank_start: int = DEFAULT_RANK_START, a_bounds: list = A_BOUNDS, 
-                    q_bounds: list = Q_BOUNDS) -> None\
+                    q_bounds: list = Q_BOUNDS) -> None
+  
     Estimates the parameters (a, q, m) by minimizing the mean squared error 
     between empirical and approximated r(n, k) values.
     
