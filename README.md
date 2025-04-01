@@ -4,21 +4,28 @@ using the Zipf-Mandelbrot law.
 
 Class Attributes:
 -----------------
-DEFAULT_M0 : int
+DEFAULT_M0 : int\
     Initial value for numerical integration of the distribution tail.
-DEFAULT_N_KNOTS : int
+    
+DEFAULT_N_KNOTS : int\
     Number of knots for numerical integration.
-DEFAULT_A_START : float
+    
+DEFAULT_A_START : float\
     Initial value of parameter a.
-DEFAULT_Q_START : float
+    
+DEFAULT_Q_START : float\
     Initial value of parameter q.
-DEFAULT_RANK_START : int
+    
+DEFAULT_RANK_START : int\
     Starting rank for error calculation.
-A_BOUNDS : list
+    
+A_BOUNDS : list\
     Bounds for parameter a.
-Q_BOUNDS : list
+    
+Q_BOUNDS : lis
     Bounds for parameter q.
-ERROR_VALUE : float
+    
+ERROR_VALUE : float\
     Error value (e.g., for NaN cases).
 
 Initialization:
@@ -67,6 +74,7 @@ __init__(file_path: str)
     between empirical and approximated r(n, k) values.
 
     Initializes fields:
+    
     - `estimated_parameters` with list of estimated parameters a, q, m.
     - `approx_std` with approximation std.
 
