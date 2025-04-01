@@ -2,6 +2,17 @@
 A class for word frequency analysis and frequency distribution approximation 
 using the Zipf-Mandelbrot law.
 
+Initialization:
+--------------
+To create an instance of the Text class, provide the path to a text file:
+
+```
+text_analysis = Text("path/to/textfile.txt")
+```
+
+Upon initialization, the text is loaded, preprocessed, and analyzed to compute word frequencies 
+and ranks.
+
 Class Attributes:
 -----------------
 * `DEFAULT_M0 : int` - initial value for numerical integration of the distribution tail.
@@ -19,17 +30,6 @@ Class Attributes:
 * `Q_BOUNDS : list` - bounds for parameter q.
     
 * `ERROR_VALUE : float` - error value (e.g., for NaN cases).
-
-Initialization:
---------------
-To create an instance of the Text class, provide the path to a text file:
-
-```
-text_analysis = Text("path/to/textfile.txt")
-```
-
-Upon initialization, the text is loaded, preprocessed, and analyzed to compute word frequencies 
-and ranks.
 
 Fields:
 --------------
