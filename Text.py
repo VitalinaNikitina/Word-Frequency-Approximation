@@ -120,7 +120,7 @@ class Text:
             # Numerical integration setup:
             # Split interval [1/m, 1/m_0] into n_knots points
             j = np.arange(n_knots)
-            y_j = 1 / m + j * (1 / m_0 - 1 / m) / n_knots
+            y_j = 1 / m + (j + 1 / 2) * (1 / m_0 - 1 / m) / n_knots
 
             probability = c * (1 / y_j + q) ** -a
 
