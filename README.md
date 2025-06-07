@@ -13,6 +13,18 @@ text_analysis = Text("path/to/textfile.txt")
 Upon initialization, the text is loaded, preprocessed, and analyzed to compute word frequencies 
 and ranks.
 
+### Constants
+| Attribute | Type | Default | Description |
+|-----------|------|---------|-------------|
+| `DEFAULT_M0` | `int` | `2000` | Initial value for numerical integration of the distribution tail |
+| `DEFAULT_N_KNOTS` | `int` | `500` | Number of knots for numerical integration |
+| `DEFAULT_A_START` | `float` | `1.2` | Initial value for Zipf exponent parameter (a) |
+| `DEFAULT_Q_START` | `float` | `10.0` | Initial value for Mandelbrot shift parameter (q) |
+| `DEFAULT_F_START` | `int` | `1` | Starting frequency index for error calculation |
+| `A_BOUNDS` | `list[float]` | `[0.0, 3.0]` | Valid range for parameter a during optimization |
+| `Q_BOUNDS` | `list[float]` | `[-1.0, 500.0]` | Valid range for parameter q during optimization |
+| `DEFAULT_EDGE_FOR_CORE` | `int` | `500` | Frequency threshold for two-stage optimization |
+
 Class Attributes:
 -----------------
 * `DEFAULT_M0 : int` - initial value for numerical integration of the distribution tail.
